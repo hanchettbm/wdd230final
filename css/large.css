@@ -30,22 +30,6 @@
         justify-content: center;
     }
 
-    /* Hero Text */
-    /* #smallText, #mediumText{
-        display: none;
-    }
-
-    #largeText{
-        display: block;
-        position: absolute;
-        top: 25px;
-        left: 800px;
-        float: right;
-        color: red;
-        margin-right: 25px;
-        margin-top: 25px;
-        font-size: 45px;
-    } */
 
     .contentbox.hero img{
         width: unset;
@@ -111,30 +95,31 @@
         text-align: center;
     }
 
-    /* Article */
-    .contentbox.article {
+    /* Add */
+    .contentbox.add.home {
         background: radial-gradient(rgb(238, 238, 238), #eebc43);
         display: block;
+        width: 95%;
     }
 
-    .contentbox.article h2 {
+    .contentbox.add.home h2 {
         text-align: left;
     }
 
-    .contentbox.article h3 {
+    .contentbox.add.home h3 {
         padding-left: 0.5rem;
         color: #3c687c;
         font-style: italic;
     }
 
-    .contentbox.article img {
+    .contentbox.add.home img {
         max-width: 400px;
         float: right; 
         margin: 10px;
         box-shadow: 0 0 30px #333;
     }
 
-    .contentbox.article p {
+    .contentbox.add.home p {
         text-align: justify;
         font-size: 20px;
     }
@@ -192,32 +177,8 @@
     div.cards {
         display: grid;
         margin: auto;
-        width: 55%;
+        width: 100%;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-
-    @media only screen and (max-width: 1669px){
-        div.cards {
-            width: 65%;
-        }
-    }
-
-    @media only screen and (max-width: 1508px){
-        div.cards {
-            width: 75%;
-        }
-    }
-    
-    @media only screen and (max-width: 1269px){
-        div.cards {
-            width: 85%;
-        }
-    }
-
-    @media only screen and (max-width: 1060px){
-        div.cards {
-            width: 100%;
-        }
     }
 
     div.cards section {
@@ -225,7 +186,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 400px;
+        max-width: 500px;
     }
 
     div.cards h2 h3 p {
@@ -238,6 +199,7 @@
     
     section img{
         width: 90%;
+        height: 200px;
     }
 
     /* Home Events */

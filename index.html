@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Quattrocento&display=swap" rel="stylesheet">  
     <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <script src="https://kit.fontawesome.com/8d47c4beba.js" crossorigin="anonymous"></script>
     <script defer src="js/fonts.js"></script>
     <script defer src="js/dates.js"></script>
     <script defer src="js/lazyload.js"></script>
@@ -32,7 +33,7 @@
     </div>
 
     <header>
-        <img src="images/auroralogo.jpg" alt="Weather Logo">
+        <img src="images/auroralogo.jpg" alt="Aurora Logo">
         <section class="headings">
             <h1>Aurora Area Chamber of Comerce</h1>
             <p>Opening doors in all new directions.</p>   
@@ -50,12 +51,62 @@
     </nav>
     <main>
         <h1>Home</h1>
+
+        <div class="contentbox add home">
+            <img src="images/cityhall.jpg" alt="article">
+              <h2>We Support Our Local Busineses!</h2>
+              <p>Did you know that for every $100 you spend at a local merchant, $68 stays in the local community? 
+                Our local businesses are eager to meet you. 
+            </p>
+            <h3>Here are some of the top rated businesses in Aurora</h3>
+            <div class="cards">
+                <section>
+                    <img src="images/insighthealth.png">
+                    <p>Holistic medicine is a form of healing that considers the whole person—body, mind, spirit, and emotions—in the quest for optimal health and wellness.
+                        Dana is a licensed acupuncturist and Traditional Chinese Medicine (TCM) clinician.
+                    </p>
+                    <p class="location"> 
+                        <i class='fas fa-map-marker-alt' style='font-size:16px'></i>
+                        <a href="https://goo.gl/maps/xuJL4kAoEEx4YMSQ7">2010 S. Blackhawk St. #240 Aurora, CO 80014</a>
+                    </p>
+                    <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel:(720) 242-8272">(720) 242-8272</a></P>
+                    <p class="phone"><i class='fas fa-compass' style='font-size:16px'></i> <a href="http://insighthealthcenter.com/"> www.insighthealthcenter.com</a></P>
+                </section>
+                <section>
+                    <img src="images/petals.jpeg">
+                    <p>We're committed to offering only the best fresh floral arrangements and gifts backed by service that is friendly 
+                        and prompt. Because all of our customers are important our professional staff is dedicated to making your 
+                        experience a pleasant one.</p>
+                    <p class="location"> 
+                        <i class='fas fa-map-marker-alt' style='font-size:16px'></i>
+                        <a href="https://www.google.com/maps/dir/?api=1&origin=&destination=AAFES+Bldg+1%2C+365+N+Telluride%2C+Buckley+AFB++Aurora%2C+CO%2C+80011">AAFES Bldg 1, 365 N Telluride, Buckley AFB Aurora, CO, 80011</a>
+                    </p>
+                    <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel: (720) 717-8877">(720) 717-8877</a></P>
+                    <p class="phone"><i class='fas fa-compass' style='font-size:16px'></i> <a href="https://petalsandbloomsbuckley.com/"> www.petalsandbloomsbuckley.com</a></P>
+                </section>
+                <section>
+                    <img src="images/yum.png">
+                    <p>Cozy family-owned bakery in Aurora providing a range of Asian pastries, desserts, cakes and Boba tea. Enjoy the wide variety 
+                        of taste sensations including cakes, cookies, tortes, tarts and breakfast pastries that we delight in preparing 
+                        for you each day.</p>
+                    <p class="location"> 
+                        <i class='fas fa-map-marker-alt' style='font-size:16px'></i>
+                        <a href="https://www.google.com/maps?q=yum+yum+cake+%26+pastries&um=1&ie=UTF-8&sa=X&ved=2ahUKEwiYhfXh1JjvAhWGLc0KHegrDbsQ_AUoAXoECAYQAw">2680 S Havana St, Aurora, CO 80014</a>
+                    </p>
+                    <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel: (303) 353-8266">(303) 353-8266</a></P>
+                    <p class="phone"><i class='fas fa-compass' style='font-size:16px'></i> <a href="https://www.yumyumcakehouse.com/"> www.yumyumcakehouse.com</a></P>
+                </section>
+                <p>*Learn more about local businesses <a href="https://www.topratedlocal.com/select-category/aurora-co-usa">here</a></P>
+            </div>
+
+            </div>
+
         <div class="contentbox hero home">
             <picture>
-                <source media="(max-width: 32.4em)" srcset="images/hero.jpg">
-                <source media="(min-width: 32.5em)" srcset="images/hero.jpg">
-                <source media="(min-width: 60em)" srcset="images/hero.jpg">
-                <img src="images/hero.jpg" alt="hero image">
+                <source media="(max-width: 32.4em)" srcset="images/housing.jpg">
+                <source media="(min-width: 32.5em)" srcset="images/housing.jpg">
+                <source media="(min-width: 60em)" srcset="images/housing.jpg">
+                <img src="images/housing.jpg" alt="hero image">
             </picture>
             <section class="stats">
                 <h2>Weather Summary</h2>
@@ -95,28 +146,13 @@
 
         <div class="cards"></div>
 
-        <div class="contentbox article home">
-          <img src="images/homearticle.png" alt="article">
-            <h2>Fun Facts For Small Towns</h2>
-            <h3>by Baden Hanchett</h3>
-                <p>Small town living isn't just about the weather, it's also about the activities and expirences 
-                   you can have as you visit these beautiful areas. For example Soda Springs has lots of fun sights.
-                   The Soda Springs Gyser is a great stop. If the weather is right, it feels like a hometown version 
-                   of Old Faithful, but without the crowd of tourists. You can also ski in Kelly Park once you check 
-                   for fresh powder! Preston Idaho is full of pioneer history and cultre. It's also the home of the great 
-                   Napolean Dynamite. Fish Haven is right on the edge of bear lake. Take a swim! There are also many 
-                   hinking trails like the Crimsion Trail and even the Minnetonka Caves to visit. Come and enjoy small town 
-                   Idaho, whatever the weather may be.  
-                </p>
-          </div>
-
           <h2 class="home events-title">Town Events</h2>
             <div class="town-events">
                 <div class="events-content"></div>
             </div>
 
         <div class="contentbox contact">
-                <img class="map" src="images/map.png" alt="map">
+                <img class="map" src="images/mountainhwy.jpg" alt="map">
                 <div class="info">
                     <h3>Weather 4 You</h3>
                     <p class="location">📍 30 N 1st E <br>
@@ -133,7 +169,7 @@
         </div>
     </main>
     <footer>
-        <div>&copy; Aurora Chamber of Comerce | Attributions | Baden Hanchett</div>
+        <div>&copy; Aurora Chamber of Comerce | <a href="attributions.html">Attributions</a> | Baden Hanchett</div>
         <div class="date"><span id="currentDate"></span></div>
         <div class="visits">Days between Visits: <span id="count"></span></div>
     </footer>
