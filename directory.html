@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aurora Chamber of Comerce | Home</title>
+    <title>Aurora Chamber of Comerce | Directory</title>
     <meta name="description" content="Aurora Colorado Chamber of Comerce Home Page" />
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="css/normalize.css">
@@ -12,25 +12,15 @@
     <link rel="stylesheet" href="css/large.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Quattrocento&display=swap" rel="stylesheet">  
-    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script> 
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Quattrocento&display=swap" rel="stylesheet"> 
+    <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>  
     <script defer src="js/fonts.js"></script>
     <script defer src="js/dates.js"></script>
     <script defer src="js/lazyload.js"></script>
     <script defer src="js/navigation.js"></script>
     <script defer src="js/visits.js"></script>
-    <script defer src="js/weatherapi.js"></script>
-    <script defer src="js/alertbanner.js"></script>
 </head>
 <body>
-    
-    <div id="alert-header">
-        <div class="alert">
-            <h1>Weather Alerts</h1>
-        </div>
-        <button onclick="hideAlerts()">Hide Alerts</button>
-    </div>
-
     <header>
         <img src="images/auroralogo.jpg" alt="Weather Logo">
         <section class="headings">
@@ -41,10 +31,10 @@
     <nav>
         <ul class="navigation">
             <li><a href="#" class="ham"> &#9776; Menu</a></li>
-            <li class="active"><a href="index.html"> Home</a></li>
+            <li><a href="index.html"> Home</a></li>
             <li><a href="city.html">The City of Aurora</a></li>
             <li><a href="join.html">Join Us</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li class="active"><a href="directory.html">Directory</a></li>
             <li><a href="contact.html">Contact Us</a></li>
         </ul>
     </nav>
@@ -57,41 +47,7 @@
                 <source media="(min-width: 60em)" srcset="images/hero.jpg">
                 <img src="images/hero.jpg" alt="hero image">
             </picture>
-            <section class="stats">
-                <h2>Weather Summary</h2>
-                <hr>
-                <p id="description">Current Status:</p>
-                <p id="current-temp">Current Temperature:</p>
-                <p>Wind Chill: <span id="chill"></span></p>
-                <p id="humidity">Humidity: <span>70%</span>°F</p>
-                <p id="speed">Wind Speed:</p>
-            </section>
         </div>
-
-        <div class="contentbox forecast">
-            <h2>3 Day Forecast</h2>
-            <div class="contentbox forecast table">
-                <table>
-                    <thead>
-                        <tr>
-                            <th class="week-day">MON</th>
-                            <th class="week-day">TUES</th>
-                            <th class="week-day">WED</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>
-                                <img class="weekly-image" src="images/placeholder.png" alt="daily forecast"><br> <p class="weekly-temp">25</p></td>
-                            <td>
-                                <img class="weekly-image" src="images/placeholder.png" alt="daily forecast"><br> <p class="weekly-temp">25</p></td>
-                            <td>
-                                <img class="weekly-image" src="images/placeholder.png" alt="daily forecast"><br> <p class="weekly-temp">25</p></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-         </div>
 
         <div class="cards"></div>
 
