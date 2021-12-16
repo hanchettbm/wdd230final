@@ -185,7 +185,7 @@ footer {
 
 /* Homepage purpose */
 .contentbox.purpose {
-    background-color: #c9bdb7;
+    background-color: #c4b6b0c0;
     display:flex;
     flex-direction: column;
     align-items: center;
@@ -200,7 +200,7 @@ footer {
     width: 200px;
     max-width: 300px;
     box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
-    background-color: #828fa5;
+    background-color: #5e6b83;
     color: white;
 }
 
