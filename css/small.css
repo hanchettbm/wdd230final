@@ -756,3 +756,19 @@ div.cards.directory section img{
     height: 85%;
     margin: 30px;   
 }
+
+.contentbox.final-demog {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+    border: none;
+    background-color:transparent;
+    max-width: 95%;
+}
+
+.contentbox.final-demog img{
+   width: 50%;
+   margin: 15px;
+   box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+}
