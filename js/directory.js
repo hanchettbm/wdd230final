@@ -1,5 +1,5 @@
 
-fetch("json/directory.json")
+fetch("wdd230final/json/directory.json")
   .then((response) => {
     return response.json();
   })
