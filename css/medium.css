@@ -208,4 +208,23 @@
         grid-template-columns: 1fr 1fr;
     }
 
+	/* City Page */
+	.contentbox.demographic .contentbox.forecast.table {
+        flex-direction: column;
+    }
+
+	.contentbox.second-demographics {
+        grid-template-columns: 1fr;
+    }
+
+	.contentbox.final-demog {
+        flex-direction: column;
+    }
+
+	.contentbox.final-demog img{
+		width: 100%;
+		margin: 15px;
+	 }
+	 
+
 }

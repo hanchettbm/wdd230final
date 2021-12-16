@@ -708,6 +708,7 @@ div.cards.directory section img{
 
 .contentbox.demographic .contentbox.forecast.table {
     margin: 20px;
+    flex-direction: column;
 }
 
 .contentbox.demographic .contentbox.forecast.table img{
@@ -761,14 +762,13 @@ div.cards.directory section img{
     display: flex;
     align-content: center;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     border: none;
     background-color:transparent;
-    max-width: 95%;
 }
 
 .contentbox.final-demog img{
-   width: 50%;
+   width: 100%;
    margin: 15px;
    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
 }

@@ -292,4 +292,25 @@
     .contentbox.second-demographics {
         grid-template-columns: 1.5fr 2fr
     }
+
+    .contentbox.demographic .contentbox.forecast.table {
+        flex-direction: row;
+    }
+
+    @media only screen and (max-width: 1248px){
+        .contentbox.demographic .contentbox.forecast.table {
+            flex-direction: column;
+        }
+    }
+
+    .contentbox.final-demog {
+        flex-direction: row;
+        max-width: 95%;
+    }
+
+    .contentbox.final-demog img{
+        width: 50%;
+        margin: 15px;
+     }
+     
 }
