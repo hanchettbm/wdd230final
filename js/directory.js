@@ -5,7 +5,6 @@ fetch(requestURL)
     return response.json();
   })
   .then((jsonObject) => {
-    console.log(jsonObject);
     const businesses = jsonObject["businesses"];
     businesses.forEach((business) => {
       
