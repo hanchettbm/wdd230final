@@ -144,7 +144,7 @@
 	}
 	
 	#inputStreet input{
-		width: 91.5%;
+		width: 93%;
 	}
 	
 	#inputCity input{
@@ -164,7 +164,7 @@
 	}
 	
 	#inputCountry input{
-		width: 45%;
+		width: 46%;
 	}
 
 	div.danger {
