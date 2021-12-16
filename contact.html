@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Quattrocento&display=swap" rel="stylesheet">   
     <script defer src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script src="https://kit.fontawesome.com/8d47c4beba.js" crossorigin="anonymous"></script>
     <script defer src="js/fonts.js"></script>
     <script defer src="js/dates.js"></script>
     <script defer src="js/lazyload.js"></script>
@@ -22,7 +23,7 @@
 </head>
 <body>
     <header>
-        <img src="images/auroralogo.jpg" alt="Weather Logo">
+        <img src="images/auroralogo.jpg" alt="Aurora Logo">
         <section class="headings">
             <h1>Aurora Area Chamber of Comerce</h1>
             <p>Opening doors in all new directions.</p>   
@@ -39,46 +40,16 @@
         </ul>
     </nav>
     <main>
-        <h1>Home</h1>
-        <div class="contentbox hero home">
-            <picture>
-                <source media="(max-width: 32.4em)" srcset="images/hero.jpg">
-                <source media="(min-width: 32.5em)" srcset="images/hero.jpg">
-                <source media="(min-width: 60em)" srcset="images/hero.jpg">
-                <img src="images/hero.jpg" alt="hero image">
-            </picture>
-        </div>
-
-        <div class="cards"></div>
-
-        <div class="contentbox article home">
-          <img src="images/homearticle.png" alt="article">
-            <h2>Fun Facts For Small Towns</h2>
-            <h3>by Baden Hanchett</h3>
-                <p>Small town living isn't just about the weather, it's also about the activities and expirences 
-                   you can have as you visit these beautiful areas. For example Soda Springs has lots of fun sights.
-                   The Soda Springs Gyser is a great stop. If the weather is right, it feels like a hometown version 
-                   of Old Faithful, but without the crowd of tourists. You can also ski in Kelly Park once you check 
-                   for fresh powder! Preston Idaho is full of pioneer history and cultre. It's also the home of the great 
-                   Napolean Dynamite. Fish Haven is right on the edge of bear lake. Take a swim! There are also many 
-                   hinking trails like the Crimsion Trail and even the Minnetonka Caves to visit. Come and enjoy small town 
-                   Idaho, whatever the weather may be.  
-                </p>
-          </div>
-
-          <h2 class="home events-title">Town Events</h2>
-            <div class="town-events">
-                <div class="events-content"></div>
-            </div>
-
+        <h1>Contact Us</h1>
+        <div class="contentbox contact-us-page">
         <div class="contentbox contact">
-                <img class="map" src="images/map.png" alt="map">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.245552540901!2d-104.82315068457008!3d39.71166397945325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c62e7994f7e01%3A0x46ad0a2862f81a61!2sAurora%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1639620638226!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <div class="info">
-                    <h3>Weather 4 You</h3>
-                    <p class="location">📍 30 N 1st E <br>
-                                        Preston, ID 83263</p>
-                    <p class="phone">☎️ (999) 999-9999</P>
-                    <p class="mail">📩 weather4you@weather.com</P>
+                    <h3>Aurora Chamber of Commerce</h3>
+                    <p class="location"><i class='fas fa-map-marker-alt' style='font-size:16px'></i> 14305 E Alameda Ave<br>
+                                        Aurora, CO 80012</p>
+                                        <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel: +13033441500">(303) 344-1500</a></P>
+                                            <p class="phone"><i class='fas fa-compass' style='font-size:16px'></i> <a href="https://www.aurorachamber.org/"> www.aurorachamber.org</a></P>
                     <div class="social">
                         <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
                         <a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="pinterest"></a>
@@ -87,9 +58,71 @@
                     </div>
                 </div>
         </div>
+        <div class="contentbox contact-form">
+            <form method="get" action="thanks.html">
+                <fieldset>
+                    <legend>Get In Contact With Us</legend>
+                    <label class="personal">First Name*<input type="text" name="firstname" required></label>
+                    <label class="personal">Last Name*<input type="text" name="lastname" required></label>
+                    <label class="personal">Cell Phone Number <input type="tel" name="phone" placeholder="(555) 555-5555"></label>
+                    <label class="personal">Email*<input type="email" name="email" placeholder="businesses@comerce.com" required></label>
+                    <label class="comments">Comments<textarea rows="5" cols="40" placeholder="Add comments here"></textarea></label>
+                </fieldset>
+                <div class="submit">
+                    <input type="submit" value="Contact Us" class="submitButton">
+                </div>
+        </form>
+    </div>
+    </div>
+    <h1>Board of Directors</h1>
+    <div class="cards board">
+        <section>
+            <img src="images/dudeone.jpg">
+            <h3>Chad Barns</h3>
+            <h4>CHAIR</h4>
+            <p>Wagner Testing Co.</P>
+            <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel:(303) 333-3927">(303) 333-3927</a></P>
+        </section>
+        <section>
+            <img src="images/womanone.jpg">
+            <h3>Becky Wagner</h3>
+            <h4>CHAIR-ELECT AND VICE CHAIR FOR PUBLIC ISSUES</h4>
+            <p>Oscorp</P>
+            <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel:(720) 895-3087">(720) 895-3087</a></P>
+        </section>
+        <section>
+            <img src="images/dudetwo.jpg">
+            <h3>Henry Allen</h3>
+            <h4>IMMEDIATE PAST CHAIR</h4>
+            <p>Daily Bugle</P>
+            <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel:(303) 139-3014">(303) 139-3014</a></P>
+        </section>
+        <section>
+            <img src="images/dudethree.jpg">
+            <h3>Bryce Vine</h3>
+            <h4>PAST CHAIR ONCE REMOVED</h4>
+            <p>Chick-Fil-A</P>
+            <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel:(303) 799-3284">(303) 799-3284</a></P>
+        </section>
+        <section>
+            <img src="images/dudefour.jpg">
+            <h3>Peter Parker</h3>
+            <h4>TREASURER</h4>
+            <p>Apple Inc.</P>
+            <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel:(720) 739-1027">(720) 739-1027</a></P>
+        </section>
+        <section>
+            <img src="images/womantwo.jpg">
+            <h3>Leeann Nielsen</h3>
+            <h4>SECRETARY</h4>
+            <p>Noodles And Co.</P>
+            <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel:(303) 123-3987">(303) 123-3987</a></P>
+        </section>
+
+    </div>
     </main>
     <footer>
-        <div>&copy; Aurora Chamber of Comerce| Attributions | Baden Hanchett</div>
+        <div>&copy; Aurora Chamber of Comerce | <a href="attributions.html">Attributions</a> | Baden Hanchett</div>
         <div class="date"><span id="currentDate"></span></div>
         <div class="visits">Days between Visits: <span id="count"></span></div>
     </footer>

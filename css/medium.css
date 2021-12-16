@@ -196,6 +196,10 @@
 		display: flex;
 	}
 
+	.contentbox.contact-us-page {
+		grid-template-columns: 1fr;
+	}
+
 	/* Gallery */
 	.container {
         margin: 1rem auto; 

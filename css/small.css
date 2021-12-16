@@ -368,6 +368,31 @@ footer {
 	display: block;
 }
 
+.contentbox.contact-us-page{
+    display: grid;
+    grid-template-columns:1fr;
+    background-color: #cdb9a554;
+    border: none;
+    width: 96%;
+    border-radius: 4px;
+}
+
+.contentbox.contact-form {
+    width: 95%;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+.contentbox.contact-form form fieldset{
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 /* Gallery */
 
 .captions {
