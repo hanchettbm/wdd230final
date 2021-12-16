@@ -1,5 +1,5 @@
 
-fetch("json/directory.json")
+fetch("sdfasdfasdfasdf")
   .then((response) => {
     return response.json();
   })
