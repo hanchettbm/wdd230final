@@ -135,6 +135,36 @@
 		width: 110%;
 	}
 
+
+	.form-group {
+		width: 500px;
+		display: block;
+	}
+	
+	#inputStreet input{
+		width: 91.5%;
+	}
+	
+	#inputCity input{
+		width: 40%;
+	}
+	
+	#inputState input {
+		width: 17%;
+	}
+	
+	#inputZip input{
+		width: 22%;
+	}
+	
+	#inputCounty input{
+		width: 40%;
+	}
+	
+	#inputCountry input{
+		width: 45%;
+	}
+
 	div.danger {
 		display: block;
 	}

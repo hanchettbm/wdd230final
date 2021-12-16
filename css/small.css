@@ -443,24 +443,6 @@ form label.personal input, form label.personal select, form label.report input, 
     margin-left: 0px;
 }
 
-div.danger {
-    display: flex;
-    line-height: 20px;
-}
-
-.flexly {
-    display: flex;
-    align-items: center;
-    color: black;
-    font-family: 'Quattrocento', serif;
-    padding-top: 15px;
-}
-
-#ratingvalue {
-    margin: 0 15px;
-    color:black;
-}
-
 form textarea{
     font-family: 'Quattrocento', serif;
     font-size: small;
@@ -498,6 +480,14 @@ form label.personal input:required:valid{
     border: green solid 1px;
 }
 
+form label.report input:required{
+    border: red solid 1px;
+}
+
+form label.report input:required:valid{
+    border: green solid 1px;
+}
+
 .response {
     text-align: center;
 }
@@ -509,48 +499,25 @@ form label.personal input:required:valid{
 .comments {
 	display: inline-grid;
 	font-family: 'Quattrocento', serif;
+    margin-top: 30px;
+    margin-bottom: 15px;
 }
 
 .comments textarea {
 	margin-top: 5px;
 }
 
-input, label {
+.form-group input{
     margin: 5px 5px;
-  }
-  
-  .form-group {
-    margin: 30px auto;
-    width: 450px;
-  }
-  
-  .form-control {
-    float: left;
-  }
-  
-  #inputStreet {
-    width: 100%;
-  }
-  
-  #inputCity {
-    width: 50%;
-  }
-  
-  #inputState {
-    width: 15%;
-  }
-  
-  #inputZip {
-    width: 28%;
-  }
-  
-  #inputCounty {
-    width: 45%;
-  }
-  
-  #inputCountry {
-    width: 50%;
-  }
+    border-radius: 5px;
+    padding: 7px;
+    color: black;
+}
+
+.form-group p {
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
   
 
 /* HomePage Cards */

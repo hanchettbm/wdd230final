@@ -166,7 +166,7 @@
     }
 
     /* Storm Center Form  */
-    form label.personal, form label.report, form div {
+    form label.personal {
 		display: inline-flex;
 		padding-right: 30px;
 		flex-wrap: wrap;

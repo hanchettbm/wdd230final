@@ -39,8 +39,42 @@
         </ul>
     </nav>
     <main>
-        <h1>Storm Center Form</h1>
-        <h2>Tell Us About Your Area</h2>
+        <h1>Join Us</h1>
+        <div class="contentbox join-us"> 
+            <div class="benefits">
+                <h3>Benifits of Joining</h3>
+                <p>As a small business owner it is imperative that you network. The Chamber of Commerce
+                    gives you the opportunity to meet with other local business owners and network. Of course 
+                    they also present business owners in a positive light to the community.</p>
+                <p>The Chamber of Commerce is essential to the growth and in some cases the revitalization of 
+                    a local area. Through lobbying activities and grant preparation activities the Chamber 
+                    of Commerce can help to find some much needed funding to improve a local area.</P>
+                <p>Free marketing. As a member of the Chamber of Commerce you will get free promotion. 
+                    Many people use their local Chamber as an authority to find products and services. 
+                    Of course that free promotion spills over to your ability to market business to business 
+                    because you will have access to the list of other business owner members.</P>
+                <p>Exclusive advertising perks are also a benefit of the Chamber of Commerce. In many local 
+                    publications members of the Chamber of Commerce are listed. It also adds credibility to 
+                    your business when you are a member.</P>
+                <p>The Chamber of Commerce should be viewed as your business partner. It is a valuable tool 
+                    for any small business owner and it should be fully embraced.
+                </P>
+            </div>
+            <div class="key">
+                <h3>Membership Information</h3>
+                <ul>
+                    <li class="title">Gold ($1000)
+                        <ul>
+                          <li>Directory Listings</li>
+                          <li>Business Trainings</li>
+                          <li>Social Media Posts</li>
+                          <li>Luncheon Tickets</li>
+                          <li>Sponsorships With Levels Of Advertising</li>
+                        </ul>
+                </ul>
+            </div>   
+        </div>  
+        <h2>Tell Us About You</h2>
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Personal Information</legend>
@@ -52,98 +86,40 @@
             </fieldset>
 
             <fieldset>
-                <legend>Storm Report Detials</legend>
+                <legend>Business Information</legend>
 
-                <label class="personal">Business Name*<input type="text" name="firstname" pattern="[A-Za-z].{5,}" required></label>
+                <label class="report">Business Name*<input type="text" name="firstname" pattern="[A-Za-z].{5,}" required></label>
+                
                 <div class="form-group">
-                    <p></p>
-                    <label class="address"> <input type="street" 
-                           class="form-control" 
-                           id="autocomplete" 
-                           placeholder="Street"></label>
+                    <p>Business Address</p>
+                    <label class="form-control" id="inputStreet"> <input type="street"  placeholder="Street"></label>
                     
-                    <label class="address"> <input type="city" 
-                           class="form-control" 
-                           id="inputCity" 
-                           placeholder="City"></label>
+                    <label class="form-control" id="inputCity" > <input type="city"  placeholder="City"></label>
                     
-                    <label class="address"> <input type="state" 
-                           class="form-control" 
-                           id="inputState" 
-                           placeholder="State"></label>
+                    <label class="form-control" id="inputState"> <input type="state"  placeholder="State"></label>
                     
-                     <label class="address"> <input type="zip" 
-                           class="form-control" 
-                           id="inputZip" 
-                           placeholder="Zip"></label>
+                     <label class="form-control" id="inputZip"> <input type="zip"  id="inputZip" placeholder="Zip"></label>
                     
-                    <label class="address"> <input type="county" 
-                           class="form-control" 
-                           id="inputCounty" 
-                           placeholder="County"></label>
+                    <label class="form-control" id="inputCounty"> <input type="county"  placeholder="County"></label>
                     
-                    <label class="address"> <input type="country" 
-                           class="form-control" 
-                           id="inputCountry" 
-                           placeholder="Country"></label>
+                    <label class="form-control" id="inputCountry"> <input type="country" placeholder="Country"></label>
                   </div>
+
+                  <label class="comments">Business Description<textarea rows="3" cols="65" placeholder="Briefly describe your business"></textarea></label>
                   
-                <label class="report">Storm Date<input type="date" name="stormDate"></label>
-
-                <label class="report">Storm Type
-                    <input list="stormChoices" placeholder="Select Type">
-                        <datalist id="stormChoices">
-                            <option value="Flash Flood">
-                            <option value="Hail">
-                            <option value="Hurricane">
-                            <option value="Thunderstorm">
-                            <option value="Tornado">
-                        </datalist>
-                </label>
-
-                <label class="flexly" for="rating">Storm Rating: &nbsp;&nbsp;&nbsp;
-			    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-			        <span id="ratingvalue">5</span>
-		        </label>
-		        <datalist id="tickmarks">
-                    <option value="0">
-                    <option value="1">
-                    <option value="2">
-                    <option value="3">
-                    <option value="4">
-                    <option value="5">
-                    <option value="6">
-                    <option value="7">
-                    <option value="8">
-                    <option value="9">
-                    <option value="10">
-		        </datalist>
+                <label class="report">Business Website URL<input type="url" name="url"></label>
 
                 <label class="report">
-                Storm Region
-                    <select name="region">
-                        <option value="">Select Region</option>
-                        <option value="preston">Preston</option>
-                        <option value="sodasprings">Soda Springs</option>
-                        <option value="fishhaven">Fish Haven</option>
+                Membership Level Selection 
+                    <select name="membership">
+                        <option value="">Select Option</option>
+                        <option value="Non-profit ($100)">Non-profit ($100)</option>
+                        <option value="Bronze ($200)">Bronze ($200)</option>
+                        <option value="Silver ($400)">Silver ($400)</option>
+                        <option value="Gold ($1000)">Gold ($1000)</option>
                     </select>
                 </label>
-
-            <div class="danger">User In-Danger Level
-                <label class="danger"><input type="radio" name="danger" value="yes">  Yes</label>
-                <label class="danger"><input type="radio" name="danger" value="maybe">  Maybe</label>
-                <label class="danger"><input type="radio" name="danger" value="No">  No</label>
-            </div>
         </fieldset>
-
-        <fieldset>
-            <legend>Additional Information or Comments</legend>
-            <label class="comments">Comments<textarea rows="5" cols="40" placeholder="Add comments here"></textarea></label>
-        </fieldset>
-        <div class="submit">
-            <input type="submit" value="Submit Report" class="submitButton">
-        </div>
-        </form>
     </main>
     <footer>
         <div>&copy; Aurora Chamber of Comerce| Attributions | Baden Hanchett</div>
