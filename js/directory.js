@@ -1,5 +1,6 @@
 
-fetch("wdd230final/json/directory.json")
+const requestURL = "https://api.jsonbin.io/b/61bb28f6cc8e0231013729c1"
+fetch(requestURL)
   .then((response) => {
     return response.json();
   })
