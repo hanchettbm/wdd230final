@@ -689,3 +689,70 @@ div.cards.directory section img{
     border-radius: 4px;
     background-color: #cdb9a5;
 }
+
+/* City Page */
+
+.contentbox.demographic {
+    background-color: #a5b3ac;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    border: none;
+    border-radius: 4px;
+}
+
+.contentbox.demographic img {
+    max-width: 500px;
+}
+
+.contentbox.demographic .contentbox.forecast.table {
+    margin: 20px;
+}
+
+.contentbox.demographic .contentbox.forecast.table img{
+    margin: 20px;
+}
+
+.contentbox.demographic .contentbox.forecast.table table{
+    margin: 20px;
+}
+
+/* City Section two */
+
+.contentbox.second-demographics {
+    display: grid;
+    grid-template-columns:1fr;
+    background-color: transparent;
+    border: none;
+}
+
+.contentbox.second-demographics .contentbox.race {
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    background-color:#d6c9bb;
+}
+
+.contentbox.second-demographics .contentbox.race li{
+ font-size: 18px;
+}
+
+.contentbox.second-demographics .contentbox.race img{
+    width: 93%;
+    height: 25%;
+    margin: 15px;
+    margin-top: 60px;
+}
+
+.contentbox.second-demographics .contentbox.jobs {
+    background-color:#96aaaf;
+    border-radius: 4px;
+}
+
+.contentbox.second-demographics .contentbox.jobs img{
+    padding: 20px;
+    width: 85%;
+    height: 85%;
+    margin: 30px;   
+}

@@ -286,4 +286,10 @@
         height: 260px;
         background-color: white;
     }
+
+    /* City Page */
+
+    .contentbox.second-demographics {
+        grid-template-columns: 1.5fr 2fr
+    }
 }
