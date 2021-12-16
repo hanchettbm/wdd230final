@@ -19,10 +19,11 @@
     <script defer src="js/lazyload.js"></script>
     <script defer src="js/navigation.js"></script>
     <script defer src="js/visits.js"></script>
+    <script defer src="js/directory.js"></script>
 </head>
 <body>
     <header>
-        <img src="images/auroralogo.jpg" alt="Weather Logo">
+        <img src="images/auroralogo.jpg" alt="Aurora Logo">
         <section class="headings">
             <h1>Aurora Area Chamber of Comerce</h1>
             <p>Opening doors in all new directions.</p>   
@@ -39,57 +40,11 @@
         </ul>
     </nav>
     <main>
-        <h1>Home</h1>
-        <div class="contentbox hero home">
-            <picture>
-                <source media="(max-width: 32.4em)" srcset="images/hero.jpg">
-                <source media="(min-width: 32.5em)" srcset="images/hero.jpg">
-                <source media="(min-width: 60em)" srcset="images/hero.jpg">
-                <img src="images/hero.jpg" alt="hero image">
-            </picture>
-        </div>
-
-        <div class="cards"></div>
-
-        <div class="contentbox article home">
-          <img src="images/homearticle.png" alt="article">
-            <h2>Fun Facts For Small Towns</h2>
-            <h3>by Baden Hanchett</h3>
-                <p>Small town living isn't just about the weather, it's also about the activities and expirences 
-                   you can have as you visit these beautiful areas. For example Soda Springs has lots of fun sights.
-                   The Soda Springs Gyser is a great stop. If the weather is right, it feels like a hometown version 
-                   of Old Faithful, but without the crowd of tourists. You can also ski in Kelly Park once you check 
-                   for fresh powder! Preston Idaho is full of pioneer history and cultre. It's also the home of the great 
-                   Napolean Dynamite. Fish Haven is right on the edge of bear lake. Take a swim! There are also many 
-                   hinking trails like the Crimsion Trail and even the Minnetonka Caves to visit. Come and enjoy small town 
-                   Idaho, whatever the weather may be.  
-                </p>
-          </div>
-
-          <h2 class="home events-title">Town Events</h2>
-            <div class="town-events">
-                <div class="events-content"></div>
-            </div>
-
-        <div class="contentbox contact">
-                <img class="map" src="images/map.png" alt="map">
-                <div class="info">
-                    <h3>Weather 4 You</h3>
-                    <p class="location">📍 30 N 1st E <br>
-                                        Preston, ID 83263</p>
-                    <p class="phone">☎️ (999) 999-9999</P>
-                    <p class="mail">📩 weather4you@weather.com</P>
-                    <div class="social">
-                        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
-                        <a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="pinterest"></a>
-                        <a href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="twitter"></a>
-                        <a href="https://www.whatsapp.com/"><img src="images/whatsapp.png" alt="whatsapp"></a>
-                    </div>
-                </div>
-        </div>
+        <h1>Directory</h1>
+        <div class="cards directory"></div>
     </main>
     <footer>
-        <div>&copy; Aurora Chamber of Comerce| Attributions | Baden Hanchett</div>
+        <div>&copy; Aurora Chamber of Comerce | <a href="attributions.html">Attributions</a> | Baden Hanchett</div>
         <div class="date"><span id="currentDate"></span></div>
         <div class="visits">Days between Visits: <span id="count"></span></div>
     </footer>

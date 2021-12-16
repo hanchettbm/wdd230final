@@ -1,0 +1,67 @@
+{
+    "businesses": [
+      {
+        "name": "Ivan's Barber Shop",
+        "logo": "ivans.jpeg",
+        "motto": "PROVIDING QUALITY MEN'S CUTS TO AURORA & BRIGHTON, CO FOR 35+ YEARS",
+        "address": "550 S 3rd Ave, Brighton, CO 80601",
+        "phone": "(303) 427-4260",
+        "email": "kennethrlmiller@hotmail.com",
+        "website": "https://ivansbarbershop.com/"
+      },
+      {
+        "name": "GOLDEN SAIGON Restaurant",
+        "logo": "goldensaigon.png",
+        "motto": "We are here to help you continue to enjoy your Golden Saigon favorites",
+        "address": "2648 S Parker Rd, Unit 2 Aurora, CO 80014",
+        "phone": "(303) 671-7100",
+        "email": "N/A",
+        "website": "https://goldensaigon.com/menu/"
+      },
+      {
+        "name": "Average Joe Computer Services",
+        "logo": "averagejoe.png",
+        "motto": "We do computer repair for less...",
+        "address": "1466 Pierce St. Unit 1 Lakewood, CO 80214",
+        "phone": "(720) 524-7603",
+        "email": "N/A",
+        "website": "https://www.averagejoecomputers.com/index.html"
+      },
+      {
+        "name": "Aurora Family Dentistry",
+        "logo": "dentist.png",
+        "motto": "It is Your Smile, Let Us Help You Make It Your Best.",
+        "address": "13700 E Colfax Ave Suite M Aurora, CO 80011",
+        "phone": "(303) 731-2308",
+        "email": "N/A",
+        "website": "https://yourauroradentist.com/"
+      },
+      {
+        "name": "Smashburger",
+        "logo": "smashburger.png",
+        "motto": "Smashburger delivers a bold, memorable and relatable taste through our obsession with the culinary process of burger creation.",
+        "address": "23890 E. Smoky Hill Rd, Unit 240 City Aurora, CO 80016",
+        "phone": "(720) 505-4606",
+        "email": "N/A",
+        "website": "https://smashburger.com/"
+      },
+      {
+        "name": "Geek Street Computers",
+        "logo": "geekstreet.png",
+        "motto": "Geek street Computers. Computer solutions since 2003.",
+        "address": "4255 S Broadway Englewood, CO 80113",
+        "phone": "(303) 789-9940",
+        "email": "Sales.geekst@gmail.com",
+        "website": "https://goldensaigon.com/menu/"
+      },
+      {
+        "name": "Biondi Jewelers Inc",
+        "logo": "biondi.png",
+        "motto": "Let us help you find the perfect piece of dazzling jewlrey.",
+        "address": "15755 East Briarwood Circle Aurora, CO 80016",
+        "phone": "(303) 680-8725",
+        "email": "N/A",
+        "website": "https://www.biondijewelry.com/"
+      }
+    ]
+  }

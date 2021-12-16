@@ -287,6 +287,22 @@
         height: 260px;
     }
 
+    div.cards.directory {
+        margin: auto;
+        width: 90%;
+        grid-gap: 10px;
+    }
+
+    div.cards.directory section {
+        background: radial-gradient(rgb(238, 238, 238), #a3a893);
+    }
+
+    div.cards.directory section img{
+        width: 80%;
+        height: 260px;
+        background-color: white;
+    }
+
     /* Home Events */
     div.town-events .events-content{
         display: grid;
