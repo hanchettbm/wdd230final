@@ -51,3 +51,13 @@ fetch("../json/directory.json")
     
     });
   });
+
+  function listView() {
+    var x = document.querySelector("div.cards.directory");
+      x.style = 'grid-template-columns: 1fr';
+  }
+
+  function gridView() {
+    var x = document.querySelector("div.cards.directory");
+      x.style = 'grid-template-columns: 1fr 1fr 1fr';
+  }

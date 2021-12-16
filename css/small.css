@@ -659,6 +659,43 @@ section img{
     padding-right: .2rem;
 }
 
+div.cards.directory section {
+    background: radial-gradient(rgb(238, 238, 238), #a3a893);
+}
+
+div.cards.board section {
+    background: radial-gradient(rgb(238, 238, 238), #adb3b0);
+}
+
+div.cards.directory section img{ 
+    background-color: white;
+}
+
+.directory-buttons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.directory-buttons button{
+    border-radius: 8px;
+    border: solid 1px black;
+    padding: 15px 25px;
+    margin: 10px;
+    width: 200px;
+    max-width: 300px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.3);
+    background-color: #828fa5;
+    color: white;
+}
+
+.directory-buttons button:hover{
+    background-color: #566573;}
+
 /* hompage Article */
 .contentbox.article.home {
     background: radial-gradient(rgb(238, 238, 238), #89afbf);
