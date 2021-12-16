@@ -204,6 +204,10 @@ footer {
     color: white;
 }
 
+.contentbox.purpose button:hover {
+    background-color: #566573;
+}
+
 .contentbox.purpose h3{
     text-align: center;
 }
@@ -406,12 +410,53 @@ footer {
 
 /* Storm Center */
 
+.contentbox.join-us {
+    display: grid;
+    grid-template-columns:1fr;
+    background-color: transparent;
+    border: none;
+    grid-gap: 15px;
+}
+
+.benefits {
+    background-color: #e4c084;
+    border-radius: 5px;
+    border: 1px solid #010202;
+    padding: 20px;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.benefits h3 {
+    text-align: center;
+}
+
+.benefits img {
+    width: 400px;
+}
+
+
+.key {
+    background-color: #b7beca
+    ;
+    border-radius: 5px;
+    border: 1px solid #010202;
+    padding: 20px;
+}
+
+.key h3 {
+    text-align: center;
+}
+
 form fieldset {
     margin: 1rem;
     border: 1px solid #3c747c;
     border-radius: 5px;
     padding: 20px;
-    background-color: #a0e3fc33;
+    background-color: #a3a89394;
 }
 
 form legend {
@@ -438,7 +483,7 @@ form label.personal input, form label.personal select, form label.report input, 
     color: black;
     width: 80%;
     max-width: 250px;
-    background-color: rgba(65, 65, 65, 0.1);
+    background-color: rgba(116, 112, 112, 0.445);
     margin: 8px;
     margin-left: 0px;
 }
@@ -458,10 +503,10 @@ form textarea{
 
 form input.submitButton {
     font-family: 'Quattrocento', serif;
-    border: none;
-    background-color: #3c747c;
+    border: solid 1px black;
+    background-color: #828fa5;
     color: white;
-    border-radius: 20px;
+    border-radius: 10px;
     padding: 15px 25px;
     margin-bottom: 10px;
     width: 300px;
@@ -469,7 +514,7 @@ form input.submitButton {
 }
 
 form input.submitButton:hover {
-    background-color: #264653;
+    background-color: #566573;
 }
 
 form label.personal input:required{
@@ -494,6 +539,15 @@ form label.report input:required:valid{
 
 .thanks {
     padding-bottom: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.thanks img {
+    padding: 40px;
+    width: 700px;
 }
 
 .comments {
@@ -606,4 +660,11 @@ img.weekly-image {
 
 .contentbox.town-events li.title li {
     font-size: 13px;
+}
+
+.contentbox.attributions {
+    max-width: 85%;
+    padding-bottom: 200px;
+    border-radius: 4px;
+    background-color: #cdb9a5;
 }

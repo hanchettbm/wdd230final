@@ -161,11 +161,26 @@
         margin: 10px;
     }
 
+    .benefits {
+        display: block;
+    }
+
+    .benefits img {
+        max-width: 400px;
+        float: right; 
+        margin: 10px;
+    }
+
     .contentbox.town-events {
         text-align: justify;
     }
 
     /* Storm Center Form  */
+
+    .contentbox.join-us {
+        grid-template-columns: 3fr 1fr
+    }
+
     form label.personal {
 		display: inline-flex;
 		padding-right: 30px;

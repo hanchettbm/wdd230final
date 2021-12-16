@@ -43,6 +43,7 @@
         <div class="contentbox join-us"> 
             <div class="benefits">
                 <h3>Benifits of Joining</h3>
+                <img src="images/downtowncity.jpg" alt="hero image">
                 <p>As a small business owner it is imperative that you network. The Chamber of Commerce
                     gives you the opportunity to meet with other local business owners and network. Of course 
                     they also present business owners in a positive light to the community.</p>
@@ -63,7 +64,7 @@
             <div class="key">
                 <h3>Membership Information</h3>
                 <ul>
-                    <li class="title">Gold ($1000)
+                    <li class="title">Gold ($1000) Inludes:
                         <ul>
                           <li>Directory Listings</li>
                           <li>Business Trainings</li>
@@ -71,6 +72,24 @@
                           <li>Luncheon Tickets</li>
                           <li>Sponsorships With Levels Of Advertising</li>
                         </ul>
+                    <li class="title">Silver ($400) Inludes:
+                        <ul>
+                            <li>Directory Listings</li>
+                            <li>Business Trainings</li>
+                            <li>Social Media Posts</li>
+                            <li>Luncheon Tickets</li>
+                        </ul>
+                    <li class="title">Bronze ($200) Inludes:
+                    <ul>
+                        <li>Directory Listings</li>
+                        <li>Business Trainings</li>
+                        <li>Social Media Posts</li>
+                    </ul>
+                <li class="title">Non-profit ($100) Inludes:
+                    <ul>
+                        <li>Directory Listings</li>
+                        <li>Business Trainings</li>
+                    </ul>
                 </ul>
             </div>   
         </div>  
@@ -78,9 +97,9 @@
         <form method="get" action="thanks.html">
             <fieldset>
                 <legend>Personal Information</legend>
-                <label class="personal">First Name*<input type="text" name="firstname" pattern="[A-Za-z].{5,}" required></label>
-                <label class="personal">Last Name*<input type="text" name="lastname" pattern="[A-Za-z].{5,}" required></label>
-                <label class="personal">Title <input "text" name="title" pattern="[A-Za-z].{5,}" ></label>
+                <label class="personal">First Name*<input type="text" name="firstname" required></label>
+                <label class="personal">Last Name*<input type="text" name="lastname" required></label>
+                <label class="personal">Title <input "text" name="title" ></label>
                 <label class="personal">Email*<input type="email" name="email" placeholder="businesses@comerce.com" required></label>
                 <label class="personal">Cell Phone Number <input type="tel" name="phone" placeholder="(555) 555-5555"></label>
             </fieldset>
@@ -88,7 +107,7 @@
             <fieldset>
                 <legend>Business Information</legend>
 
-                <label class="report">Business Name*<input type="text" name="firstname" pattern="[A-Za-z].{5,}" required></label>
+                <label class="report">Business Name*<input type="text" name="firstname" required></label>
                 
                 <div class="form-group">
                     <p>Business Address</p>
@@ -120,9 +139,13 @@
                     </select>
                 </label>
         </fieldset>
+        <div class="submit">
+            <input type="submit" value="Submit Report" class="submitButton">
+        </div>
+    </form>
     </main>
     <footer>
-        <div>&copy; Aurora Chamber of Comerce| Attributions | Baden Hanchett</div>
+        <div>&copy; Aurora Chamber of Comerce | <a href="attributions.html">Attributions</a> | Baden Hanchett</div>
         <div class="date"><span id="currentDate"></span></div>
         <div class="visits">Days between Visits: <span id="count"></span></div>
     </footer>
