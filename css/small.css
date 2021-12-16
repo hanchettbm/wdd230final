@@ -5,6 +5,7 @@ body {
     font-size: 15px;
 }
 
+/* Alert Header */
 #alert-header {
     background-color: #e0f5ff;
     padding-left: 15px;
@@ -182,8 +183,7 @@ footer {
     border: none;
 }
 
-
-
+/* Homepage purpose */
 .contentbox.purpose {
     background-color: #b99c8d;
     display:flex;
@@ -256,6 +256,7 @@ footer {
     margin: 30px;
 }
 
+/* Weather */
 .contentbox.weather {
     width: 95%;
     background-color: transparent;
@@ -283,7 +284,7 @@ footer {
     width: 100%;
 }
 
-/* Stats */
+/* Weather Stats */
 .contentbox .stats {
 	background: radial-gradient(#eee, #3c687c);
 	border: 1px solid #000;
@@ -312,7 +313,7 @@ footer {
 	display: none;
 }
 
-/* Add */
+/* Add Spot*/
 .contentbox.add.home {
 	background: radial-gradient(rgb(238, 238, 238), #a7b591);
 	display: flex;
@@ -377,6 +378,7 @@ footer {
     border-radius: 4px;
 }
 
+/* Contact Form */
 .contentbox.contact-form {
     width: 95%;
     background-color: transparent;
@@ -393,47 +395,7 @@ footer {
     padding-top: 0px;
 }
 
-/* Gallery */
-
-.captions {
-    text-align: center;
-    font-family: 'Quattrocento', serif;
-    padding: 8px;
-  }
-
-.container {
-    margin: 1rem auto; 
-    display:grid; 
-    grid-template-columns: 1fr; 
-    max-width: 1048px;
-    align-items: center;
-}
-
-.container figure{
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.container img { 
-    width: 250px; 
-    height: 146px; 
-    margin: .5rem;
-}
-
-.container img[data-src] {
-    filter: blur(0.2em);
-}
-
-.container img {
-    border: 1px solid #333;
-    padding: 2px;
-    filter: blur(0em);
-    transition: filter 0.5s;
-}
-
-/* Storm Center */
+/* Join Us Form */
 
 .contentbox.join-us {
     display: grid;
@@ -442,6 +404,7 @@ footer {
     border: none;
     grid-gap: 15px;
 }
+/* Benifits */
 
 .benefits {
     background-color: #e4c084;
@@ -463,7 +426,7 @@ footer {
     width: 400px;
 }
 
-
+/* Key for Joining */
 .key {
     background-color: #b7beca
     ;
@@ -476,6 +439,7 @@ footer {
     text-align: center;
 }
 
+/* Basic Form Styiling */
 form fieldset {
     margin: 1rem;
     border: 1px solid #3c747c;
@@ -562,6 +526,7 @@ form label.report input:required:valid{
     text-align: center;
 }
 
+/* Thanks */
 .thanks {
     padding-bottom: 350px;
     display: flex;
@@ -599,7 +564,7 @@ form label.report input:required:valid{
 }
   
 
-/* HomePage Cards */
+/* Cards */
 
 div.cards {
     display: grid;
@@ -694,17 +659,9 @@ div.cards.directory section img{
 }
 
 .directory-buttons button:hover{
-    background-color: #566573;}
-
-/* hompage Article */
-.contentbox.article.home {
-    background: radial-gradient(rgb(238, 238, 238), #89afbf);
+    background-color: #566573;
 }
 
-/* Weekly Forecast images */
-img.weekly-image {
-    max-width: 50px;
-}
 
 /* Home Events Section */
 .contentbox.town-events{
@@ -723,6 +680,8 @@ img.weekly-image {
 .contentbox.town-events li.title li {
     font-size: 13px;
 }
+
+/* Attributions */
 
 .contentbox.attributions {
     max-width: 85%;

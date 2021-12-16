@@ -30,6 +30,8 @@
 		text-decoration: none;
 	}
 
+	/* Home content */
+
 	.contentbox.first-half {
 		display: grid;
 		grid-template-columns: 1fr;
@@ -44,6 +46,7 @@
 		border: none;
 	}
 
+	/* Weather */
 	.contentbox.weather {
 		width: 95%;
         background-color: transparent;
@@ -135,7 +138,6 @@
 		width: 110%;
 	}
 
-
 	.form-group {
 		width: 500px;
 		display: block;
@@ -200,27 +202,10 @@
 		grid-template-columns: 1fr;
 	}
 
-	/* Gallery */
-	.container {
-        margin: 1rem auto; 
-        display:grid; 
-        grid-template-columns: 1fr 1fr; 
-        max-width: 1048px;
-    }
-
-	/* Homepage Cards */
+	/* Cards */
 	div.cards {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
-	/* HomeEvents */
-	div.town-events .events-content{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-
-	div.town-events.locations .events-content section{
-		width: 55%;
-	}
 }

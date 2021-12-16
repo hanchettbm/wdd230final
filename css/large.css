@@ -21,6 +21,8 @@
         text-decoration: none;
     }
 
+    /* Home Content */
+
     .contentbox.first-half {
         grid-template-columns: 3.5fr 1fr;
     }
@@ -36,6 +38,7 @@
         grid-template-columns: 1fr 1fr
     }
 
+    /* Weather */
     .contentbox.weather {
         width: 95%;
         background-color: transparent;
@@ -79,7 +82,6 @@
     }
 
     /* Stats */
-
     .contentbox .stats {
         width: 80%;
     }
@@ -150,6 +152,7 @@
         margin: 10px;
     }
 
+    /* Home Styling */
     .contentbox.add.home p {
         text-align: justify;
         font-size: 15px;
@@ -175,7 +178,7 @@
         text-align: justify;
     }
 
-    /* Storm Center Form  */
+    /* Join us Form  */
 
     .contentbox.join-us {
         grid-template-columns: 3fr 1fr
@@ -223,27 +226,8 @@
             grid-template-columns: 1fr;
         }
     }
-    
 
-    /* Gallery */
-    .container {
-        margin: 1rem auto; 
-        display:grid; 
-        grid-template-columns: 1fr 1fr 1fr; 
-        max-width: 1048px;
-    }
-
-    .container img { 
-        width: 250px; 
-        height: 146px; 
-        margin: .5rem;
-    }
-
-    .container figure:hover { 
-        box-shadow: 0 0 40px #333;
-    }
-
-    /* Homepage Content */
+    /* Homepage Content Cards*/
     div.cards {
         display: grid;
         margin: auto;
@@ -301,62 +285,5 @@
         width: 80%;
         height: 260px;
         background-color: white;
-    }
-
-    /* Home Events */
-    div.town-events .events-content{
-        display: grid;
-        margin: auto;
-        width: 55%;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 25px;
-    }
-
-    div.town-events .events-content section{
-        max-width: 400px;
-    }
-
-    div.town-events.locations .events-content section{
-        max-width: 52%;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    @media only screen and (max-width: 1669px){
-        div.town-events .events-content {
-            width: 65%;
-        }
-        div.town-events.locations .events-content section{
-            width: 85%;
-        }
-    }
-
-    @media only screen and (max-width: 1508px){
-        div.town-events .events-content {
-            width: 75%;
-        }
-
-        div.town-events.locations .events-content section{
-            width: 85%;
-        }
-    }
-    
-    @media only screen and (max-width: 1269px){
-        div.town-events .events-content {
-            width: 85%;
-        }
-        div.town-events.locations .events-content section{
-            width: 85%;
-        }
-    }
-
-    @media only screen and (max-width: 1060px){
-        div.town-events .events-content {
-            width: 100%;
-        }
-        
-        div.town-events.locations .events-content section{
-            width: 85%;
-        }
     }
 }
