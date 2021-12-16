@@ -30,6 +30,37 @@
 		text-decoration: none;
 	}
 
+	.contentbox.first-half {
+		display: grid;
+		grid-template-columns: 1fr;
+		background-color: transparent;
+		border: none;
+	}
+
+	.contentbox.second-half {
+		display: grid;
+		grid-template-columns: 1fr;
+		background-color: transparent;
+		border: none;
+	}
+
+	.contentbox.weather {
+		width: 95%;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+	}
+
+	.contentbox.purpose .purpose-content img {
+        width: 450px;
+        margin: 10px;
+        box-shadow: 0 0 30px #333;
+    }
+
 	/* Hero Banner */
 	.contentbox.hero{
 		background-color: transparent;
@@ -44,43 +75,24 @@
 		width: 100%;
 	}
 
-	/* Hero Text */
-	/* #smallText, #largeText{
-        display: none;
-    }
-
-    #mediumText{
-		display: block;
-        position: absolute;
-        top: 25px;
-        left: 500px;
-        float: right;
-        color: red;
-        margin-right: 25px;
-        margin-top: 25px;
-        font-size: 30px;
-    } */
-
 	/* Stats */
-	.contentbox.hero .stats {
+	.contentbox .stats {
 		display: block;
-		top: 45px;
-		right: 400px;
-		padding: 0.9rem;
+		width: 80%;
 	}
 
-	.contentbox.hero .stats h2 {
-		padding-bottom: 0;
-		margin: 0;
+	.contentbox .stats h2 {
+		padding-bottom: 10px;
+		margin: 5px;
 	}
 
-	.contentbox.hero .stats hr {
+	.contentbox .stats hr {
 		border: 1px solid black;
 	}
 
-	.contentbox.hero .stats p {
+	.contentbox .stats p {
 		text-align: left;
-		font-size: 14px;
+		font-size: 16px;
 	}
 
 	/* Forecast Table */
@@ -114,34 +126,6 @@
 		text-align: center;
 	}
 
-	/* Article */
-	.contentbox.article {
-		background: radial-gradient(rgb(238, 238, 238), #eebc43);
-		display: block;
-	}
-
-	.contentbox.article h2 {
-		text-align: left;
-	}
-
-	.contentbox.article h3 {
-		padding-left: 0.5rem;
-		color: #3c687c;
-		font-style: italic;
-	}
-
-	.contentbox.article img {
-		max-width: 400px;
-		float: right; 
-		margin: 10px;
-		box-shadow: 0 0 30px #333;
-	}
-
-	.contentbox.article p {
-		text-align: justify;
-		font-size: 20px;
-	}
-
 	/* Form */
 
 	form label.personal, form label.report, form div {
@@ -157,7 +141,6 @@
 
 	/* Contact Section */
 	.contentbox.contact {
-		background: radial-gradient(rgb(238, 238, 238), #3c747c);
 		height: 390px;
 	}
 
@@ -165,6 +148,7 @@
 		display: flex;
 		max-width: 350px;
 		border: solid 1px;
+		max-height: 350px;
 		float: left;
 	}
 
@@ -193,41 +177,8 @@
 	/* Homepage Cards */
 	div.cards {
         display: grid;
-        grid-template-columns: 1fr;
-		max-width: 100%;
+        grid-template-columns: 1fr 1fr;
     }
-
-	div.cards section {
-		display: flex;
-		flex-wrap: nowrap;
-		flex-direction: row;
-		justify-content: space-evenly;
-		align-items: stretch;
-	}
-
-	div.cards section:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-
-	div.cards section .sectionText {
-		padding: 15px;
-	}
-
-	div.cards section .sectionText h3{
-		font-size: 13px;
-		text-align: center;
-	}
-
-	div.cards img {
-		margin: 1rem;
-		margin-top: 30px;
-		margin-bottom: 30px;
-	}
-	
-	section img{
-		width: 45%;
-		box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	}
 
 	/* HomeEvents */
 	div.town-events .events-content{

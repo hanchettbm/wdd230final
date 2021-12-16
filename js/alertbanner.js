@@ -3,46 +3,52 @@ fetch(alertApiURL)
     .then((response) => response.json())
     .then((jsObject) => {
         
-        
-        jsObject.alerts.forEach((alert) => {
+        if (jsObject.alerts){
 
-            let alertGroup = document.createElement("div");
+            document.getElementById("alert-header").style.display = "block";
 
-            let alertSender = document.createElement("p");
-            alertSender.innerHTML = `Sender: ${alert.sender_name}`
+            jsObject.alerts.forEach((alert) => {
 
-            let alertEvent = document.createElement("p");
-            alertEvent.innerHTML = `Event: ${alert.event}`
+                let alertGroup = document.createElement("div");
 
-            var startDate = new Date((alert.start) *1000).toLocaleString('en-US');
-            let alertStart = document.createElement("p");
-            alertStart.innerHTML = `Start Time: ${startDate}`
+                let alertSender = document.createElement("p");
+                alertSender.innerHTML = `Sender: ${alert.sender_name}`
 
-            var endDate = new Date((alert.end) *1000).toLocaleString('en-US');
-            let alertEnd = document.createElement("p");
-            alertEnd.innerHTML = `End Time: ${endDate}`
+                let alertEvent = document.createElement("p");
+                alertEvent.innerHTML = `Event: ${alert.event}`
 
-            let alertDescription = document.createElement("p");
-            alertDescription.textContent = alert.description;
+                var startDate = new Date((alert.start) *1000).toLocaleString('en-US');
+                let alertStart = document.createElement("p");
+                alertStart.innerHTML = `Start Time: ${startDate}`
 
-            let alertTags = document.createElement("div");
-            alert.tags.forEach((tag) => { 
-                let alertTag = document.createElement("p");
-                alertTag.innerHTML = `Tag: ${tag}`
-                alertTags.append(alertTag);
+                var endDate = new Date((alert.end) *1000).toLocaleString('en-US');
+                let alertEnd = document.createElement("p");
+                alertEnd.innerHTML = `End Time: ${endDate}`
+
+                let alertDescription = document.createElement("p");
+                alertDescription.textContent = alert.description;
+
+                let alertTags = document.createElement("div");
+                alert.tags.forEach((tag) => { 
+                    let alertTag = document.createElement("p");
+                    alertTag.innerHTML = `Tag: ${tag}`
+                    alertTags.append(alertTag);
+                });
+                var breakLine =  document.createElement("HR");
+                alertGroup.setAttribute("class","alert-group");
+                alertGroup.append(alertSender);
+                alertGroup.append(alertEvent);
+                alertGroup.append(alertStart);
+                alertGroup.append(alertEnd);
+                alertGroup.append(alertDescription);
+                alertGroup.append(alertTags);
+                alertGroup.append(breakLine);
+                document.querySelector("div.alert").append(alertGroup);
             });
-            var breakLine =  document.createElement("HR");
-            alertGroup.setAttribute("class","alert-group");
-            alertGroup.append(alertSender);
-            alertGroup.append(alertEvent);
-            alertGroup.append(alertStart);
-            alertGroup.append(alertEnd);
-            alertGroup.append(alertDescription);
-            alertGroup.append(alertTags);
-            alertGroup.append(breakLine);
-            document.querySelector("div.alert").append(alertGroup);
-        });
-});
+        }else {
+            document.getElementById("alert-header").style.display = "none";
+        }
+}); 
 
 function hideAlerts() {
     var x = document.getElementById("alert-header");

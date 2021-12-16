@@ -50,10 +50,11 @@
         </ul>
     </nav>
     <main>
+
         <h1>Home</h1>
 
+    <div class="contentbox first-half">
         <div class="contentbox add home">
-            <img src="images/cityhall.jpg" alt="article">
               <h2>We Support Our Local Busineses!</h2>
               <p>Did you know that for every $100 you spend at a local merchant, $68 stays in the local community? 
                 Our local businesses are eager to meet you. 
@@ -96,11 +97,28 @@
                     <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel: (303) 353-8266">(303) 353-8266</a></P>
                     <p class="phone"><i class='fas fa-compass' style='font-size:16px'></i> <a href="https://www.yumyumcakehouse.com/"> www.yumyumcakehouse.com</a></P>
                 </section>
-                <p>*Learn more about local businesses <a href="https://www.topratedlocal.com/select-category/aurora-co-usa">here</a></P>
             </div>
+            <p class="notice">*Learn more about local businesses <a href="https://www.topratedlocal.com/select-category/aurora-co-usa">here</a></P>
+        </div>
 
+        <div class="contentbox purpose">
+            <button onclick="window.location.href='join.html'">JOIN THE CHAMBER</button>
+            <div class="purpose-content">
+                <h3>Our Purpose:</h3>
+                <p>The Aurora Chamber of Commerce is an action-oriented membership organization that serves as the leading business voice in the Eastern Metro area. For our members, we seek to provide access, advocacy, and influence.
+                    We offer a variety of membership benefits and serve as a resource for connections with City, County, State, and Federal government contacts. 
+                    Becoming active in the Aurora Chamber of Commerce is an excellent way to meet other business owners and business professionals.
+                </p>
+                <p> Our goals are to help to further the interests of small businesses in a local area. 
+                    We do this through activities that can range from hosting events, to lobbying local representatives to charitable 
+                    works for the betterment of the community.
+                </p>
+                <img src="images/cityhall.jpg" alt="hero image">
             </div>
-
+            <p class="notice">*Learn more <a href="https://www.aurorachamber.org/about-us/">here</a></P>
+        </div>
+    </div>
+    <div class="contentbox second-half">
         <div class="contentbox hero home">
             <picture>
                 <source media="(max-width: 32.4em)" srcset="images/housing.jpg">
@@ -108,17 +126,17 @@
                 <source media="(min-width: 60em)" srcset="images/housing.jpg">
                 <img src="images/housing.jpg" alt="hero image">
             </picture>
-            <section class="stats">
-                <h2>Weather Summary</h2>
-                <hr>
-                <p id="description">Current Status:</p>
-                <p id="current-temp">Current Temperature:</p>
-                <p>Wind Chill: <span id="chill"></span></p>
-                <p id="humidity">Humidity: <span>70%</span>°F</p>
-                <p id="speed">Wind Speed:</p>
-            </section>
         </div>
-
+        <div class="contentbox weather">
+        <section class="stats">
+            <h2>Weather Summary</h2>
+            <hr>
+            <p id="description">Current Status:</p>
+            <p id="current-temp">Current Temperature:</p>
+            <p>Wind Chill: <span id="chill"></span></p>
+            <p id="humidity">Humidity: <span>70%</span>°F</p>
+            <p id="speed">Wind Speed:</p>
+        </section>
         <div class="contentbox forecast">
             <h2>3 Day Forecast</h2>
             <div class="contentbox forecast table">
@@ -133,32 +151,77 @@
                     <tbody>
                         <tr>
                             <td>
-                                <img class="weekly-image" src="images/placeholder.png" alt="daily forecast"><br> <p class="weekly-temp">25</p></td>
+                                <img class="weekly-image" src="images/placeholder.png" alt="daily forecast"><br> <p class="weekly-temp"></p></td>
                             <td>
-                                <img class="weekly-image" src="images/placeholder.png" alt="daily forecast"><br> <p class="weekly-temp">25</p></td>
+                                <img class="weekly-image" src="images/placeholder.png" alt="daily forecast"><br> <p class="weekly-temp"></p></td>
                             <td>
-                                <img class="weekly-image" src="images/placeholder.png" alt="daily forecast"><br> <p class="weekly-temp">25</p></td>
+                                <img class="weekly-image" src="images/placeholder.png" alt="daily forecast"><br> <p class="weekly-temp"></p></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
          </div>
-
-        <div class="cards"></div>
-
-          <h2 class="home events-title">Town Events</h2>
-            <div class="town-events">
-                <div class="events-content"></div>
+        </div> 
+    </div>
+        <section class="content-middle">
+            <div class="contentbox town-events">
+                <h2 class="home events-title">Town Events</h2>
+                <ul>
+                    <li class="title" >Leadership Aurora Class
+                        <ul>
+                          <li>Thursday Dec 16, 2021</li>
+                          <li>Time: 7:30 AM - 5:00 PM MST</li>
+                          <li>Website: <a href="http://www.aurorachamber.org"></a>http://www.aurorachamber.org</li>
+                          <li>Categories: Leadership Aurora</li>
+                        </ul>
+                        <li class="title">Info Session: Rocky Mountain MicroFinance Institute
+                            <ul>
+                              <li>Wednesday Dec 22, 2021 </li>
+                              <li>Time: 12:00 PM - 1:00 PM MST</li>
+                              <li>Website: <a href=" https://www.rmmfi.org/events"></a> https://www.rmmfi.org/events</li>
+                              <li>Categories: Community Services</li>
+                            </ul>
+                          </li>
+                          <li class="title">Ambassador Team Meeting
+                            <ul>
+                              <li>Wednesday Jan 5, 2022</li>
+                              <li>Time: 11:30 AM - 1:00 PM MST</li>
+                              <li>Website: <a href="http://www.aurorachamber.org"></a>http://www.aurorachamber.org</li>
+                              <li>Categories: Community Services, Chamber Of Commerce, Clubs/Organizations</li>
+                            </ul>
+                          </li>
+                          <li class="title">Transportation Committee - RTD and DRCOG Updates
+                            <ul>
+                              <li>Thursday Dec 16, 2021</li>
+                              <li>Time: 7:30 AM - 9:00 AM MST</li>
+                              <li>Website: <a href="http://www.aurorachamber.org"></a>http://www.aurorachamber.org</li>
+                              <li>Categories: Transportation</li>
+                            </ul>
+                          </li>
+                          <li class="title">Women in Business Committee Presents: HealthOne Behavioral Health Services
+                            <ul>
+                              <li>Tuesday Jan 25, 2022</li>
+                              <li>Time: 11:30 AM - 1:00 PM MST</li>
+                              <li>Website: <a href="http://www.aurorachamber.org"></a>http://www.aurorachamber.org</li>
+                              <li>Categories: Chamber Of Commerce</li>
+                            </ul>
+                          </li>
+                </ul>
             </div>
+            <div class="filler-images">
+                <img src="images/mountainhwy.jpg" alt="hero image">
+                <img src="images/downtownlake.jpg" alt="hero image">
+            </div>
+        </section>
 
         <div class="contentbox contact">
-                <img class="map" src="images/mountainhwy.jpg" alt="map">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3069.245552540901!2d-104.82315068457008!3d39.71166397945325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876c62e7994f7e01%3A0x46ad0a2862f81a61!2sAurora%20Chamber%20of%20Commerce!5e0!3m2!1sen!2sus!4v1639620638226!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 <div class="info">
-                    <h3>Weather 4 You</h3>
-                    <p class="location">📍 30 N 1st E <br>
-                                        Preston, ID 83263</p>
-                    <p class="phone">☎️ (999) 999-9999</P>
-                    <p class="mail">📩 weather4you@weather.com</P>
+                    <h3>Aurora Chamber of Commerce</h3>
+                    <p class="location"><i class='fas fa-map-marker-alt' style='font-size:16px'></i> 14305 E Alameda Ave<br>
+                                        Aurora, CO 80012</p>
+                                        <p class="phone"><i class='fas fa-phone' style='font-size:16px'></i> <a href="tel: +13033441500">(303) 344-1500</a></P>
+                                            <p class="phone"><i class='fas fa-compass' style='font-size:16px'></i> <a href="https://www.aurorachamber.org/"> www.aurorachamber.org</a></P>
                     <div class="social">
                         <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
                         <a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="pinterest"></a>

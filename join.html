@@ -39,54 +39,111 @@
         </ul>
     </nav>
     <main>
-        <h1>Home</h1>
-        <div class="contentbox hero home">
-            <picture>
-                <source media="(max-width: 32.4em)" srcset="images/hero.jpg">
-                <source media="(min-width: 32.5em)" srcset="images/hero.jpg">
-                <source media="(min-width: 60em)" srcset="images/hero.jpg">
-                <img src="images/hero.jpg" alt="hero image">
-            </picture>
-        </div>
+        <h1>Storm Center Form</h1>
+        <h2>Tell Us About Your Area</h2>
+        <form method="get" action="thanks.html">
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label class="personal">First Name*<input type="text" name="firstname" pattern="[A-Za-z].{5,}" required></label>
+                <label class="personal">Last Name*<input type="text" name="lastname" pattern="[A-Za-z].{5,}" required></label>
+                <label class="personal">Title <input "text" name="title" pattern="[A-Za-z].{5,}" ></label>
+                <label class="personal">Email*<input type="email" name="email" placeholder="businesses@comerce.com" required></label>
+                <label class="personal">Cell Phone Number <input type="tel" name="phone" placeholder="(555) 555-5555"></label>
+            </fieldset>
 
-        <div class="cards"></div>
+            <fieldset>
+                <legend>Storm Report Detials</legend>
 
-        <div class="contentbox article home">
-          <img src="images/homearticle.png" alt="article">
-            <h2>Fun Facts For Small Towns</h2>
-            <h3>by Baden Hanchett</h3>
-                <p>Small town living isn't just about the weather, it's also about the activities and expirences 
-                   you can have as you visit these beautiful areas. For example Soda Springs has lots of fun sights.
-                   The Soda Springs Gyser is a great stop. If the weather is right, it feels like a hometown version 
-                   of Old Faithful, but without the crowd of tourists. You can also ski in Kelly Park once you check 
-                   for fresh powder! Preston Idaho is full of pioneer history and cultre. It's also the home of the great 
-                   Napolean Dynamite. Fish Haven is right on the edge of bear lake. Take a swim! There are also many 
-                   hinking trails like the Crimsion Trail and even the Minnetonka Caves to visit. Come and enjoy small town 
-                   Idaho, whatever the weather may be.  
-                </p>
-          </div>
+                <label class="personal">Business Name*<input type="text" name="firstname" pattern="[A-Za-z].{5,}" required></label>
+                <div class="form-group">
+                    <p></p>
+                    <label class="address"> <input type="street" 
+                           class="form-control" 
+                           id="autocomplete" 
+                           placeholder="Street"></label>
+                    
+                    <label class="address"> <input type="city" 
+                           class="form-control" 
+                           id="inputCity" 
+                           placeholder="City"></label>
+                    
+                    <label class="address"> <input type="state" 
+                           class="form-control" 
+                           id="inputState" 
+                           placeholder="State"></label>
+                    
+                     <label class="address"> <input type="zip" 
+                           class="form-control" 
+                           id="inputZip" 
+                           placeholder="Zip"></label>
+                    
+                    <label class="address"> <input type="county" 
+                           class="form-control" 
+                           id="inputCounty" 
+                           placeholder="County"></label>
+                    
+                    <label class="address"> <input type="country" 
+                           class="form-control" 
+                           id="inputCountry" 
+                           placeholder="Country"></label>
+                  </div>
+                  
+                <label class="report">Storm Date<input type="date" name="stormDate"></label>
 
-          <h2 class="home events-title">Town Events</h2>
-            <div class="town-events">
-                <div class="events-content"></div>
+                <label class="report">Storm Type
+                    <input list="stormChoices" placeholder="Select Type">
+                        <datalist id="stormChoices">
+                            <option value="Flash Flood">
+                            <option value="Hail">
+                            <option value="Hurricane">
+                            <option value="Thunderstorm">
+                            <option value="Tornado">
+                        </datalist>
+                </label>
+
+                <label class="flexly" for="rating">Storm Rating: &nbsp;&nbsp;&nbsp;
+			    <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+			        <span id="ratingvalue">5</span>
+		        </label>
+		        <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+		        </datalist>
+
+                <label class="report">
+                Storm Region
+                    <select name="region">
+                        <option value="">Select Region</option>
+                        <option value="preston">Preston</option>
+                        <option value="sodasprings">Soda Springs</option>
+                        <option value="fishhaven">Fish Haven</option>
+                    </select>
+                </label>
+
+            <div class="danger">User In-Danger Level
+                <label class="danger"><input type="radio" name="danger" value="yes">  Yes</label>
+                <label class="danger"><input type="radio" name="danger" value="maybe">  Maybe</label>
+                <label class="danger"><input type="radio" name="danger" value="No">  No</label>
             </div>
+        </fieldset>
 
-        <div class="contentbox contact">
-                <img class="map" src="images/map.png" alt="map">
-                <div class="info">
-                    <h3>Weather 4 You</h3>
-                    <p class="location">📍 30 N 1st E <br>
-                                        Preston, ID 83263</p>
-                    <p class="phone">☎️ (999) 999-9999</P>
-                    <p class="mail">📩 weather4you@weather.com</P>
-                    <div class="social">
-                        <a href="https://www.facebook.com/"><img src="images/facebook.png" alt="facebook"></a>
-                        <a href="https://www.pinterest.com/"><img src="images/pinterest.png" alt="pinterest"></a>
-                        <a href="https://twitter.com/?lang=en"><img src="images/twitter.png" alt="twitter"></a>
-                        <a href="https://www.whatsapp.com/"><img src="images/whatsapp.png" alt="whatsapp"></a>
-                    </div>
-                </div>
+        <fieldset>
+            <legend>Additional Information or Comments</legend>
+            <label class="comments">Comments<textarea rows="5" cols="40" placeholder="Add comments here"></textarea></label>
+        </fieldset>
+        <div class="submit">
+            <input type="submit" value="Submit Report" class="submitButton">
         </div>
+        </form>
     </main>
     <footer>
         <div>&copy; Aurora Chamber of Comerce| Attributions | Baden Hanchett</div>

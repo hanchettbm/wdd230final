@@ -21,6 +21,42 @@
         text-decoration: none;
     }
 
+    .contentbox.first-half {
+        grid-template-columns: 3.5fr 1fr;
+    }
+
+    .content-middle {
+        grid-template-columns: 1fr 1fr;
+        margin: 0;
+        grid-gap: 0;
+        align-items: center;
+    }
+
+    .contentbox.second-half {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .contentbox.weather {
+        width: 95%;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    @media only screen and (max-width: 1069px){
+        .contentbox.first-half {
+            grid-template-columns: 1fr;
+        }
+    }
+
+    .contentbox.purpose .purpose-content img {
+        width: 288px;
+    }
+
     /* Hero Banner */
     .contentbox.hero{
         background-color: transparent;
@@ -43,23 +79,21 @@
     }
 
     /* Stats */
-    .contentbox.hero .stats {
-        position: absolute;
-        top: 45px;
-        right: 700px;
-    }
 
-    .contentbox.hero .stats h2 {
+    .contentbox .stats {
+        width: 80%;
+    }
+    .contentbox .stats h2 {
         padding-bottom: 0;
         margin: 0;
     }
 
-    .contentbox.hero .stats hr {
+    .contentbox .stats hr {
         border: 1px solid black;
     }
 
-    .contentbox.hero .stats p {
-        text-align: left;
+    .contentbox .stats p {
+        text-align: center;
         margin: 10px;
         font-size: 18px;
     }
@@ -80,13 +114,13 @@
     .col-head,th {
         font-weight: 700;
         font-size: 1rem;
-        background-color: #8cdffc;
+        background-color: #a8724e;
     }
 
     table,th,td {
         border: thin solid #333;
         border-collapse: collapse;
-        padding: 30px;
+        padding: 25px 55px 30px 55px;
     }
 
     td {
@@ -97,7 +131,6 @@
 
     /* Add */
     .contentbox.add.home {
-        background: radial-gradient(rgb(238, 238, 238), #eebc43);
         display: block;
         width: 95%;
     }
@@ -109,19 +142,27 @@
     .contentbox.add.home h3 {
         padding-left: 0.5rem;
         color: #3c687c;
-        font-style: italic;
     }
 
     .contentbox.add.home img {
         max-width: 400px;
         float: right; 
         margin: 10px;
-        box-shadow: 0 0 30px #333;
     }
 
     .contentbox.add.home p {
         text-align: justify;
-        font-size: 20px;
+        font-size: 15px;
+    }
+
+    .contentbox.town-events img {
+        max-width: 400px;
+        float: right; 
+        margin: 10px;
+    }
+
+    .contentbox.town-events {
+        text-align: justify;
     }
 
     /* Storm Center Form  */
@@ -133,13 +174,16 @@
 
     /* Contact Section */
     .contentbox.contact {
-        background: radial-gradient(rgb(238, 238, 238), #3c747c);
         height: 390px;
+        max-width: 75%;
+        border-radius: 4px;
+        display: flex;
     }
 
     .contentbox.contact .map {
-        display: block;
+        display: flex;
         max-width: 450px;
+        max-height: 360px;
         border: solid 1px;
         float: left;
         margin: 10px 150px 10px 10px;
@@ -186,7 +230,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        max-width: 500px;
+        max-width: 700px;
     }
 
     div.cards h2 h3 p {
@@ -208,7 +252,7 @@
         margin: auto;
         width: 55%;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 35px;
+        grid-gap: 25px;
     }
 
     div.town-events .events-content section{
